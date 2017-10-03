@@ -3,10 +3,10 @@ using namespace std;
 
 int power(int base, int exponent)
 {
-    if(exponent != 1)
-    return (base * power(base , exponent-1));
+    if(exponent == 0)
+    return 1;
     else
-        return base;
+        return (base * power(base , exponent-1));
 }
 int main()
 {
